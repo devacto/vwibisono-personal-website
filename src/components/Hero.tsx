@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            <span className="text-blue-600 font-caveat">Hello Friends 👋🏽</span>
+            <span className="text-blue-600 font-caveat">Hi, I am Victor</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
             I write about software engineering, system design, and building scalable applications. 
@@ -44,3 +44,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
