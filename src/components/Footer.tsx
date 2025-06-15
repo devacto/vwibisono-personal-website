@@ -13,7 +13,7 @@ const Footer = () => {
               or opportunities to collaborate.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://github.com/devacto" className="text-gray-400 hover:text-white transition-colors">
                 <Github className="h-6 w-6" />
               </a>
               <a href="https://www.linkedin.com/in/vwib/" className="text-gray-400 hover:text-white transition-colors">

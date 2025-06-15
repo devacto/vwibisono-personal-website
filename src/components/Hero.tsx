@@ -24,7 +24,7 @@ const Hero = () => {
             </Button>
           </div>
           <div className="flex justify-center space-x-6">
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+            <a href="https://github.com/devacto" className="text-gray-600 hover:text-blue-600 transition-colors">
               <Github className="h-6 w-6" />
             </a>
             <a href="https://www.linkedin.com/in/vwib/" className="text-gray-600 hover:text-blue-600 transition-colors">
