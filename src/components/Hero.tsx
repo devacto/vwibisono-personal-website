@@ -1,3 +1,4 @@
+
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -26,7 +27,7 @@ const Hero = () => {
             <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
               <Github className="h-6 w-6" />
             </a>
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+            <a href="https://www.linkedin.com/in/vwib/" className="text-gray-600 hover:text-blue-600 transition-colors">
               <Linkedin className="h-6 w-6" />
             </a>
             <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
