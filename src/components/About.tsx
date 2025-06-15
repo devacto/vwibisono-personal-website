@@ -1,6 +1,7 @@
 
 import { Code, Users, Zap, BookOpen } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import './About.css';
 
 const About = () => {
   const experiences = [
@@ -32,34 +33,34 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+    <section id="about" className="about-section">
+      <div className="about-container">
+        <div className="about-header">
+          <h2 className="about-title">
             About Me
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="about-description">
             I'm a software engineer with 6+ years of experience building scalable web applications 
             and distributed systems. I'm passionate about clean code, system design, and sharing 
             knowledge with the developer community.
           </p>
         </div>
 
-        <div className="grid gap-12 lg:grid-cols-2">
+        <div className="about-grid">
           {/* Experience */}
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-8">Experience</h3>
-            <div className="space-y-6">
+            <h3 className="about-section-title">Experience</h3>
+            <div className="experience-list">
               {experiences.map((exp, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                  <div className="flex justify-between items-start mb-2">
-                    <h4 className="text-lg font-semibold text-gray-900">{exp.role}</h4>
-                    <span className="text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                <div key={index} className="experience-item">
+                  <div className="experience-header">
+                    <h4 className="experience-role">{exp.role}</h4>
+                    <span className="experience-period">
                       {exp.period}
                     </span>
                   </div>
-                  <p className="text-blue-600 font-medium mb-3">{exp.company}</p>
-                  <p className="text-gray-600 leading-relaxed">{exp.description}</p>
+                  <p className="experience-company">{exp.company}</p>
+                  <p className="experience-description">{exp.description}</p>
                 </div>
               ))}
             </div>
@@ -67,20 +68,20 @@ const About = () => {
 
           {/* Skills */}
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-8">Skills & Expertise</h3>
-            <div className="grid gap-6 sm:grid-cols-2">
+            <h3 className="about-section-title">Skills & Expertise</h3>
+            <div className="skills-grid">
               {skills.map((skill, index) => (
-                <Card key={index} className="bg-white border border-gray-200">
+                <Card key={index} className="skill-card">
                   <CardContent className="p-6">
-                    <div className="flex items-center mb-4">
-                      <skill.icon className="h-6 w-6 text-blue-600 mr-3" />
-                      <h4 className="text-lg font-semibold text-gray-900">{skill.title}</h4>
+                    <div className="skill-header">
+                      <skill.icon className="skill-icon" />
+                      <h4 className="skill-title">{skill.title}</h4>
                     </div>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="skill-items">
                       {skill.items.map((item, itemIndex) => (
                         <span
                           key={itemIndex}
-                          className="bg-blue-50 text-blue-700 text-sm px-3 py-1 rounded-full"
+                          className="skill-tag"
                         >
                           {item}
                         </span>

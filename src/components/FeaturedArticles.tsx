@@ -2,6 +2,7 @@
 import { ExternalLink, Clock, Calendar, ArrowRight } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import './FeaturedArticles.css';
 
 const FeaturedArticles = () => {
   const articles = [
@@ -40,47 +41,47 @@ const FeaturedArticles = () => {
   ];
 
   return (
-    <section id="articles" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+    <section id="articles" className="articles-section">
+      <div className="articles-container">
+        <div className="articles-header">
+          <h2 className="articles-title">
             Featured Articles
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="articles-description">
             In-depth technical articles about software engineering, system design, and lessons learned from building production systems.
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+        <div className="articles-grid">
           {articles.map((article, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow duration-300 cursor-pointer group">
+            <Card key={index} className="article-card">
               <CardHeader>
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex items-center text-sm text-gray-500 space-x-4">
-                    <span className="flex items-center">
-                      <Calendar className="h-4 w-4 mr-1" />
+                <div className="article-header">
+                  <div className="article-meta">
+                    <span className="article-meta-item">
+                      <Calendar className="article-meta-icon" />
                       {new Date(article.date).toLocaleDateString('en-US', { 
                         year: 'numeric', 
                         month: 'long', 
                         day: 'numeric' 
                       })}
                     </span>
-                    <span className="flex items-center">
-                      <Clock className="h-4 w-4 mr-1" />
+                    <span className="article-meta-item">
+                      <Clock className="article-meta-icon" />
                       {article.readTime}
                     </span>
                   </div>
-                  <ExternalLink className="h-4 w-4 text-gray-400 group-hover:text-blue-600 transition-colors" />
+                  <ExternalLink className="article-external-icon" />
                 </div>
-                <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                <CardTitle className="article-title">
                   {article.title}
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 mb-4 leading-relaxed">
+                <p className="article-excerpt">
                   {article.excerpt}
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="article-tags">
                   {article.tags.map((tag, tagIndex) => (
                     <Badge key={tagIndex} variant="secondary" className="text-xs">
                       {tag}
@@ -92,10 +93,10 @@ const FeaturedArticles = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <a href="#" className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium group">
+        <div className="articles-footer">
+          <a href="#" className="articles-view-all">
             View All Articles
-            <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="articles-arrow" />
           </a>
         </div>
       </div>
@@ -104,3 +105,73 @@ const FeaturedArticles = () => {
 };
 
 export default FeaturedArticles;
+</lov_write>
+
+<lov-write file_path="src/components/Footer.tsx">
+import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import './Footer.css';
+
+const Footer = () => {
+  return (
+    <footer id="contact" className="footer">
+      <div className="footer-container">
+        <div className="footer-grid">
+          <div>
+            <h3 className="footer-section-title">Get In Touch</h3>
+            <p className="footer-description">
+              I'm always open to discussing interesting projects, technical challenges, 
+              or opportunities to collaborate.
+            </p>
+            <div className="footer-social">
+              <a href="#" className="footer-social-link">
+                <Github className="footer-social-icon" />
+              </a>
+              <a href="https://www.linkedin.com/in/vwib/" className="footer-social-link">
+                <Linkedin className="footer-social-icon" />
+              </a>
+              <a href="https://x.com/VictorWibisono" className="footer-social-link">
+                <Twitter className="footer-social-icon" />
+              </a>
+              <a href="#" className="footer-social-link">
+                <Mail className="footer-social-icon" />
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="footer-section-title">Quick Links</h3>
+            <ul className="footer-links">
+              <li><a href="#" className="footer-link">Home</a></li>
+              <li><a href="#articles" className="footer-link">Articles</a></li>
+              <li><a href="#about" className="footer-link">About</a></li>
+              <li><a href="#contact" className="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="footer-section-title">Newsletter</h3>
+            <p className="footer-newsletter-description">
+              Subscribe to get the latest articles and insights directly in your inbox.
+            </p>
+            <div className="footer-newsletter-form">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="footer-newsletter-input"
+              />
+              <button className="footer-newsletter-button">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <p>&copy; 2024 Victor Wibisono. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

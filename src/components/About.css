@@ -1,0 +1,164 @@
+
+.about-section {
+  padding: 5rem 1rem;
+  background-color: #f9fafb;
+}
+
+@media (min-width: 640px) {
+  .about-section {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.about-container {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .about-title {
+    font-size: 2.25rem;
+  }
+}
+
+.about-description {
+  font-size: 1.25rem;
+  color: #6b7280;
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 1.625;
+}
+
+.about-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.about-section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 2rem;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experience-item {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.experience-role {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.experience-period {
+  font-size: 0.875rem;
+  color: #6b7280;
+  background-color: #f3f4f6;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.experience-company {
+  color: #2563eb;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.experience-description {
+  color: #6b7280;
+  line-height: 1.625;
+}
+
+.skills-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.skill-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  padding: 1.5rem;
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.skill-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: #2563eb;
+  margin-right: 0.75rem;
+}
+
+.skill-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+}
