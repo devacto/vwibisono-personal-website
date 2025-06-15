@@ -5,13 +5,14 @@ import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="flex flex-col min-h-screen bg-white">
       <Navigation />
-      <Hero />
+      <main className="flex-1">
+        <Hero />
+      </main>
       <Footer />
     </div>
   );
 };
 
 export default Index;
-
