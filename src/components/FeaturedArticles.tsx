@@ -1,5 +1,5 @@
 
-import { ExternalLink, Clock, Calendar } from 'lucide-react';
+import { ExternalLink, Clock, Calendar, ArrowRight } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
