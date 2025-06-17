@@ -11,7 +11,7 @@ const Hero = () => {
         squareSize={4}
         gridGap={6}
         color="#3B82F6"
-        maxOpacity={0.3}
+        maxOpacity={0.2}
         flickerChance={0.1}
       />
       <div className="max-w-6xl mx-auto relative z-10">
