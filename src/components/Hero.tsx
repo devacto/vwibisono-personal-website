@@ -33,7 +33,7 @@ const Hero = () => {
             <a href="https://x.com/VictorWibisono" className="text-gray-600 hover:text-blue-600 transition-colors">
               <Twitter className="h-6 w-6" />
             </a>
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+            <a href="mailto:victor@wibisono.ai" className="text-gray-600 hover:text-blue-600 transition-colors">
               <Mail className="h-6 w-6" />
             </a>
           </div>
