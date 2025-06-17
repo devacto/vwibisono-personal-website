@@ -1,3 +1,4 @@
+
 import { ArrowRight, Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { FlickeringGrid } from '@/components/ui/flickering-grid';
@@ -20,8 +21,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            I write about software engineering, system design, and building scalable applications. 
-            Currently working on distributed systems and sharing insights from the trenches.
+            I am a software engineer who is passionate about building tools and products that people love. I am building in public and am writing my learnings.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
