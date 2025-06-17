@@ -1,4 +1,3 @@
-
 import { ArrowRight, Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { FlickeringGrid } from '@/components/ui/flickering-grid';
@@ -20,7 +19,7 @@ const Hero = () => {
             <span className="text-blue-600 font-caveat">Hi, I am Victor 👋🏽</span>
           </h1>
           
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-800 mb-8 max-w-3xl mx-auto leading-relaxed bg-white px-6 py-4 rounded-lg shadow-sm">
             I am a software engineer who is passionate about building tools and products that people love. I am building in public and am writing my learnings.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
